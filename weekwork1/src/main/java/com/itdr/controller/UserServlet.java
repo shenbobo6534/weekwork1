@@ -30,7 +30,6 @@ public class UserServlet extends HttpServlet {
             case "login":
                 login(request, response);
                 break;
-
         }
     }
 
@@ -47,6 +46,6 @@ public class UserServlet extends HttpServlet {
         Users data = login.getData ();
         session.setAttribute ("us",data);
 
-        request.getRequestDispatcher ("/WEB-INF/home.jsp").forward (request,response);
+        request.getRequestDispatcher ("/WEB-INF/blj.jsp").forward (request,response);
     }
 }
