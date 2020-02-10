@@ -18,7 +18,7 @@
     </style>
     <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
     <script>
-        alert("斑斓世界")
+        var s = confirm("斑斓世界");
         function blue() {
             var x = document.getElementById("tb1")
             x.style.backgroundColor="blue";

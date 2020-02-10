@@ -8,7 +8,7 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import java.sql.SQLException;
 
 public class UserDao {
-    public Users selectByUserNameAndPassword(String username,String password){
+    public Users selectByUserNameAndPassword(String username, String password){
         QueryRunner qr = new QueryRunner (new ComboPooledDataSource ());
 
         String sql = "select id,username,password,type,create_time,update_time from user where username=? and password =?";
